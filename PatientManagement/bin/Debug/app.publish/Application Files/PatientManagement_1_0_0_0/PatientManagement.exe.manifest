@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PatientManagement.exe" version="1.0.0.0" publicKeyToken="432c0b28c356ec71" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PatientManagement" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PatientManagement.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5062304">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ME/k2DGnnEXXRv8PbQPIB/oznXx46EIYOYjb9nQ2US8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="580768">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iU2DBXuEJ4l5e2Up1a2QeNBvmdWHbhB91cwMpi/p8Nc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PatientManagement.exe" size="25088">
+      <assemblyIdentity name="PatientManagement" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XltD7iANh4kyVp7tz7390rKTX6nmb9m76ajyjYIPeGo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Model.edmx.sql" size="2012">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MugB2TvUqyv9XG1in1ecM3O0tIS/tobpOGRGGbebohQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PatientManagement.exe.config" size="1422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>olecH7rKGMLEU4RbDh8A6h/xhNlea3bwTSxDX1+2WLU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=AVEVA\dionysios.chrysafini" issuerKeyHash="9d5aff5e039e46097da689a20d18dc2df86e25d8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>alJBtFmSqg0Wfs55l8exOl7/tZR/gfINIMmM/3GVz+A=</DigestValue></Reference></SignedInfo><SignatureValue>b/T9s3NdI3edrQT8J970YWb8/RLRW4PuVFTk4enIit5YjB2Hz3O12xfv4eMIUhcJGU3/RfQ+dkGCkMlROIzTm20fRE847F+w/hqfTc42yF0GQI8oFsh70lWLE5i1knrMrvKvLvNo9WPb5+HUs6ynoUnLSgIblDyl6L+zavutiHE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>udtLXcN98adJ+HMX+asg2nQjCcs1FOahy+CWSXoaT25C5ML2qyku0+hy/81PmymWnHFbwhdrPodRgn7TbBzL39QIP5F06LpKKscpIC4w2ZAi1iJbwfR3uTgAf1hI+3AQEwRh2C8hPcGf8u4gPXondin621ZsHMaJVbuztqPwI78=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e0cf9571ff8cc9200df2817f94b5ff5e3ab1c79779ce7e160daa9259b441526a" Description="" Url=""><as:assemblyIdentity name="PatientManagement.exe" version="1.0.0.0" publicKeyToken="432c0b28c356ec71" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AVEVA\dionysios.chrysafini</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Vwgme413IrcpVs5/g2gQjdpHI7QBC2G8Pa1HUN8xgB4=</DigestValue></Reference></SignedInfo><SignatureValue>JKSw0K9nKiSBbpx/+vmBLTLVGoexSRm6RlqTOc8kXGBMTzi4w9d1nKDPgBoadsXF4YYBJZZMHb4jjjVB8wKFpeP7PLCEl1bbAC2lGCuVa+ISyh4t7E9qpc22Di5W0yiaBmEucqlp8T45iomIsPUupR23hq8CtWmE6rHDx91oRlw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>udtLXcN98adJ+HMX+asg2nQjCcs1FOahy+CWSXoaT25C5ML2qyku0+hy/81PmymWnHFbwhdrPodRgn7TbBzL39QIP5F06LpKKscpIC4w2ZAi1iJbwfR3uTgAf1hI+3AQEwRh2C8hPcGf8u4gPXondin621ZsHMaJVbuztqPwI78=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQPcjmj8syxrtBkHBwsQcAdDANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQAQQBWAEUAVgBBAFwAZABpAG8AbgB5AHMAaQBvAHMALgBjAGgAcgB5AHMAYQBmAGkAbgBpMB4XDTE0MTIwMTE2MTcwOFoXDTE1MTIwMTIyMTcwOFowPzE9MDsGA1UEAx40AEEAVgBFAFYAQQBcAGQAaQBvAG4AeQBzAGkAbwBzAC4AYwBoAHIAeQBzAGEAZgBpAG4AaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAudtLXcN98adJ+HMX+asg2nQjCcs1FOahy+CWSXoaT25C5ML2qyku0+hy/81PmymWnHFbwhdrPodRgn7TbBzL39QIP5F06LpKKscpIC4w2ZAi1iJbwfR3uTgAf1hI+3AQEwRh2C8hPcGf8u4gPXondin621ZsHMaJVbuztqPwI78CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBIoDkNfxfnCjcl6+1TOcsM0ThyC0GIUVqc2oNEq1MANFf9jFPVsMBa3AvimAxjdl75+THzynkecJE18q7N94PH/Kv8P9atg8vaWUsMd2Zv61GYyXmFJ0H4YTO4IpA6KCAWhCDApV17VOb/lDfBlgBKTBLVXTmDZzgdf3Q6+AoPaA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

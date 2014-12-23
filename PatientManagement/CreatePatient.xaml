@@ -1,0 +1,22 @@
+﻿<Window x:Class="PatientManagement.CreatePatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PatientList" Height="344" Width="565">
+    <Grid>
+        <TextBox x:Name="FirstNameTxt" HorizontalAlignment="Left" Height="23" Margin="152,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="LastNameTxt" HorizontalAlignment="Left" Height="23" Margin="152,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TelephoneTxt" HorizontalAlignment="Left" Height="23" Margin="152,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AddressTxt" HorizontalAlignment="Left" Height="23" Margin="152,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Όνομα" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <Label Content="Επώνυμο" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <Label Content="ΑΜΚΑ" HorizontalAlignment="Left" Margin="9,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Τηλέφωνο" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top"/>
+        <Label Content="Διεύθυνση" HorizontalAlignment="Left" Margin="9,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Αριθμός Βιβλιάριου" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegisterTxt" HorizontalAlignment="Left" Height="23" Margin="152,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AMKATxt" HorizontalAlignment="Left" Height="23" Margin="152,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="CreateBtn" Content="Save" HorizontalAlignment="Left" Margin="432,267,0,0" VerticalAlignment="Top" Width="75" Click="CreateBtn_Click"/>
+        <Label Content="Δημιουργία" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="29" Width="190" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
